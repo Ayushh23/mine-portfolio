@@ -77,7 +77,15 @@ const Navbar = () => {
 
 
             {/* Mobile Menu Overlay */}
-            <div className={!nav ? 'hidden' : 'pointer-events-auto absolute top-0 left-0 w-full h-screen bg-primary/95 backdrop-blur-xl flex flex-col justify-center items-center z-40'}>
+            <div className={!nav ? 'hidden' : 'pointer-events-auto fixed top-0 left-0 w-full h-screen bg-primary/95 backdrop-blur-xl flex flex-col justify-center items-center z-40'}>
+                {/* Close Button */}
+                <div
+                    onClick={handleClick}
+                    className='absolute top-8 right-8 text-gray-300 text-3xl cursor-pointer hover:text-accent-cyan transition-colors z-50'
+                >
+                    <FaTimes />
+                </div>
+
                 <ul className='space-y-8 text-center'>
                     {content.nav.links.map((item, index) => (
                         <li key={index} className='text-3xl overflow-hidden'>
