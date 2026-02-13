@@ -24,12 +24,12 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav);
 
     return (
-        <div className='fixed w-full flex justify-center z-50 transition-all duration-300 pointer-events-none mt-4'>
+        <div className='fixed w-full flex justify-center z-50 transition-all duration-300 pointer-events-none mt-4 px-4'>
             {/* Floating PILL Container for Desktop/Tablet */}
             <motion.div
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                className={`pointer-events-auto h-[60px] md:h-[70px] w-full md:w-[90%] max-w-[1200px] flex justify-between items-center px-6 rounded-2xl transition-all duration-500
+                className={`pointer-events-auto h-[60px] md:h-[70px] w-full md:w-[90%] max-w-[1200px] flex justify-between items-center px-4 sm:px-6 rounded-2xl transition-all duration-500
             ${scrolled ? 'glass shadow-2xl bg-primary/40 backdrop-blur-xl border border-white/10' : 'bg-transparent'}`}
             >
 

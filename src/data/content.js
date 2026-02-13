@@ -15,8 +15,6 @@ export const content = {
         subtitle: "Java & Spring Boot Developer",
         typingText: [
             "Java Developer",
-            "Backend Developer",
-            "Spring Boot Developer",
             "Problem Solver",
             "AI App Builder",
         ],
