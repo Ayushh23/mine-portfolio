@@ -105,7 +105,7 @@ const Hero = () => {
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
-                    className='text-4xl sm:text-5xl md:text-7xl font-bold text-gray-200'
+                    className='text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-gray-200'
                 >
                     {content.hero.title.replace("Hi, I'm ", "")}
                 </motion.h1>
@@ -114,9 +114,9 @@ const Hero = () => {
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className='text-3xl sm:text-4xl md:text-6xl font-bold text-gray-400 mt-2'
+                    className='text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-gray-400 mt-2 flex flex-wrap items-center gap-x-2 sm:gap-x-3'
                 >
-                    I'm a <RotatingText />
+                    <span>I'm a</span> <RotatingText />
                 </motion.h2>
 
                 <motion.p
@@ -132,10 +132,10 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.4 }}
-                    className='flex'
+                    className='flex flex-col sm:flex-row gap-4'
                 >
-                    <Link to="projects" smooth={true} duration={500} className='mr-4'>
-                        <button className='relative group border-2 border-accent-cyan px-6 py-3 my-2 flex items-center hover:bg-accent-cyan/10 transition-all duration-300 rounded-sm font-mono text-white overflow-hidden'>
+                    <Link to="projects" smooth={true} duration={500}>
+                        <button className='relative group border-2 border-accent-cyan px-6 py-3 my-2 flex items-center justify-center hover:bg-accent-cyan/10 transition-all duration-300 rounded-sm font-mono text-white overflow-hidden w-full sm:w-auto'>
                             <span className='z-10 relative'>{content.hero.cta}</span>
                             <span className='absolute inset-0 bg-accent-cyan opacity-0 group-hover:opacity-10 transition-opacity duration-300'></span>
                             <span className='group-hover:rotate-90 duration-300 ml-3 z-10'>
@@ -144,7 +144,7 @@ const Hero = () => {
                         </button>
                     </Link>
                     <a href={content.resume.link} target="_blank" rel="noopener noreferrer">
-                        <button className='relative group border-2 border-accent-green px-6 py-3 my-2 flex items-center hover:bg-accent-green/10 transition-all duration-300 rounded-sm font-mono text-white overflow-hidden'>
+                        <button className='relative group border-2 border-accent-green px-6 py-3 my-2 flex items-center justify-center hover:bg-accent-green/10 transition-all duration-300 rounded-sm font-mono text-white overflow-hidden w-full sm:w-auto'>
                             <span className='z-10 relative'>Resume</span>
                         </button>
                     </a>

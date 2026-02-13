@@ -5,8 +5,16 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply overflow-x-hidden;
+  }
+
   body {
     @apply bg-primary text-gray-100 font-sans antialiased overflow-x-hidden;
+  }
+
+  * {
+    @apply box-border;
   }
 
   h1,
