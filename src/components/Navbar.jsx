@@ -70,8 +70,8 @@ const Navbar = () => {
                 </ul>
 
                 {/* Hamburger */}
-                <div onClick={handleClick} className='md:hidden z-50 text-gray-300 text-2xl cursor-pointer hover:text-accent-cyan transition-colors'>
-                    {!nav ? <FaBars /> : <FaTimes />}
+                <div onClick={handleClick} className={`md:hidden z-50 text-gray-300 text-2xl cursor-pointer hover:text-accent-cyan transition-colors ${nav ? 'opacity-0 pointer-events-none' : ''}`}>
+                    <FaBars />
                 </div>
             </motion.div>
 
