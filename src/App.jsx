@@ -1,27 +1,18 @@
 import React from 'react';
-import Navbar from './components/Navbar.jsx';
-import Hero from './components/Hero.jsx';
-import About from './components/About.jsx';
-import Skills from './components/Skills.jsx';
-import Experience from './components/Experience.jsx';
-import Projects from './components/Projects.jsx';
-import Testimonials from './components/Testimonials.jsx';
-import Contact from './components/Contact.jsx';
-import Footer from './components/Footer.jsx';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Portfolio from './pages/Portfolio';
+import AdminLogin from './pages/AdminLogin';
+import AdminDashboard from './pages/AdminDashboard';
 
 function App() {
   return (
-    <div className="overflow-x-hidden">
-      <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Experience />
-      <Projects />
-      <Testimonials />
-      <Contact />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Portfolio />} />
+        <Route path="/admin" element={<AdminLogin />} />
+        <Route path="/admin/dashboard" element={<AdminDashboard />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

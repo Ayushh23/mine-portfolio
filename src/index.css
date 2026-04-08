@@ -10,7 +10,7 @@
   }
 
   body {
-    @apply bg-primary text-gray-100 font-sans antialiased overflow-x-hidden;
+    @apply bg-primary text-gray-200 font-sans antialiased overflow-x-hidden;
   }
 
   * {
@@ -23,16 +23,46 @@
   h4,
   h5,
   h6 {
-    @apply font-bold tracking-tight;
+    @apply font-bold tracking-tight text-white;
   }
 }
 
 @layer components {
+
+  /* Premium Glassmorphism */
   .glass {
-    @apply bg-white/10 backdrop-blur-lg border border-white/20 shadow-xl;
+    @apply bg-secondary/40 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_0_#0000005e];
   }
 
-  .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-cyan to-accent-purple;
+  .glass-card {
+    @apply bg-gradient-to-br from-secondary/80 to-primary/80 backdrop-blur-md border border-white/5 rounded-2xl shadow-lg;
   }
+
+  /* Animated glowing text */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-cyan via-accent-purple to-accent-blue bg-[length:200%_auto] animate-shimmer;
+  }
+
+  /* Fancy subheadings */
+  .subheading-badge {
+    @apply inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-gray-300 backdrop-blur-md;
+  }
+}
+
+/* Custom Scrollbar for a sleek look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e1e1e;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333;
 }

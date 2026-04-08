@@ -1,9 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { content } from '../data/content';
+import { usePortfolioData } from '../hooks/usePortfolioData';
 import { FaQuoteLeft, FaLinkedin } from 'react-icons/fa';
 
 const Testimonials = () => {
+    const { content } = usePortfolioData();
     return (
         <div name='recommendations' className='w-full py-20 bg-primary text-gray-300'>
             <div className='max-w-[1200px] mx-auto p-4 flex flex-col justify-center w-full h-full'>

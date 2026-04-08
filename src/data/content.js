@@ -12,11 +12,12 @@ export const content = {
 
     hero: {
         title: "Hi, I'm Ayush Raj",
-        subtitle: "Java & Spring Boot Developer",
+        subtitle: "Java & AI Developer",
         typingText: [
-            "Java Developer",
-            "Problem Solver",
-            "AI App Builder",
+            "Java Development",
+            "Spring Boot",
+            "REST APIs",
+            "System Design"
         ],
         cta: "View My Work",
     },
@@ -24,7 +25,7 @@ export const content = {
     about: {
         title: "About Me",
         description:
-            "I'm a Computer Science student focused on building scalable backend systems using Java and Spring Boot. I have hands-on experience designing REST APIs, integrating AI services like Google Gemini, working with MongoDB and Redis, and developing production-ready applications. My goal is to engineer reliable, efficient backend architectures that solve real-world problems.",
+            "I'm a Computer Science student specializing in scalable backend systems using Java and Spring Boot. I build REST APIs, develop RAG-based AI applications, and integrate AI services like Google Gemini. I have experience working with SQL, MongoDB, and Redis for efficient data management and caching, and follow clean architecture to build high-performance, production-ready systems that solve real-world problems.",
 
     },
 
@@ -49,16 +50,6 @@ export const content = {
         title: "Experience",
         items: [
             {
-                role: "Software Development Intern",
-                company: "Debadarsan Consulting Private Limited",
-                duration: "May 2025 - July 2025",
-                description: [
-                    "Built an AI-powered Resume Analyzer using Gemini, PDF parsing, NLP scoring, MongoDB, and FastAPI, improving processing speed by 30%.",
-                    "Integrated Gemini API for semantic analysis and automated scoring.",
-                    "Developed a role-based e-learning platform with admin/student dashboards and dynamic chapter unlocking based on progress tracking."
-                ]
-            },
-            {
                 role: "Android Developer Intern",
                 company: "LetsGrowMore",
                 duration: "June 2024 - July 2024",
@@ -66,6 +57,16 @@ export const content = {
                     "Created a Corona Tracker app with REST API integration using Retrofit and RecyclerView for real-time updates.",
                     "Implemented a Face Recognition app using Firebase ML Kit for emotion and attribute detection.",
                     "Participated in code reviews and agile meetings."
+                ]
+            },
+            {
+                role: "Software Development Intern",
+                company: "Debadarsan Consulting Private Limited",
+                duration: "May 2025 - July 2025",
+                description: [
+                    "Built an AI-powered Resume Analyzer using Gemini, PDF parsing, NLP scoring, MongoDB, and FastAPI, improving processing speed by 30%.",
+                    "Integrated Gemini API for semantic analysis and automated scoring.",
+                    "Developed a role-based e-learning platform with admin/student dashboards and dynamic chapter unlocking based on progress tracking."
                 ]
             }
         ]
@@ -75,18 +76,25 @@ export const content = {
         title: "Featured Projects",
         items: [
             {
-                title: "Spring Boot Project Generator (NPM CLI)",
+                title: "Storm Weather Android App",
                 description:
-                    "Published an npm CLI tool with 150+ downloads that generates production-ready Spring Boot 3 projects with all necessary architecture",
-                image: "https://via.placeholder.com/600x400",
-                tech: ["Spring Boot", "JavaScript", "SpringBoot Initializer Api"],
-                github: "https://github.com/Ayushh23/SpringBoot-Project-Generator-CLI-tool",
-                demo: "#"
+                    "Created a real-time weather forecasting Android app using Retrofit and OpenWeather API with location-based updates and smooth Lottie animations.",
+                image: "/projects/storm-weather.png",
+                tech: ["Android", "Kotlin", "REST API"],
+                github: "https://github.com/Ayushh23/Storm",
+            },
+            {
+                title: "AI Email Replier",
+                description:
+                    "Developed a Spring Boot web app integrated with Google Gemini API to generate tone-based, context-aware email replies in real time.",
+                image: "/projects/ai-email.png",
+                tech: ["Spring Boot", "Gemini API", "REST APIs"],
+                github: "https://github.com/Ayushh23/Email-Replier",
             },
             {
                 title: "AI Text Summarizer Browser Extension",
                 description: "End-to-end AI browser extension that summarizes selected webpage text using a Spring Boot backend integrated with Google Gemini, delivering fast, readable summaries and productivity features.",
-                image: "https://via.placeholder.com/600x400",
+                image: "/projects/ai-summarizer.png",
                 tech: [
                     "Java",
                     "Spring Boot",
@@ -99,23 +107,14 @@ export const content = {
                 github: "https://github.com/Ayushh23/SummarizerAi",
                 demo: "#"
             },
-
             {
-                title: "AI Email Replier",
+                title: "Spring Boot Project Generator (NPM CLI)",
                 description:
-                    "Developed a Spring Boot web app integrated with Google Gemini API to generate tone-based, context-aware email replies in real time.",
-                image: "https://via.placeholder.com/600x400",
-                tech: ["Spring Boot", "Gemini API", "REST APIs"],
-                github: "https://github.com/Ayushh23/Email-Replier",
-            },
-
-            {
-                title: "Storm Weather Android App",
-                description:
-                    "Created a real-time weather forecasting Android app using Retrofit and OpenWeather API with location-based updates and smooth Lottie animations.",
-                image: "https://via.placeholder.com/600x400",
-                tech: ["Android", "Kotlin", "REST API"],
-                github: "https://github.com/Ayushh23/Storm",
+                    "Published an npm CLI tool with 150+ downloads that generates production-ready Spring Boot 3 projects with all necessary architecture",
+                image: "/projects/cli-project-generator.png",
+                tech: ["Spring Boot", "JavaScript", "SpringBoot Initializer Api"],
+                github: "https://github.com/Ayushh23/SpringBoot-Project-Generator-CLI-tool",
+                demo: "#"
             }
         ]
     },
