@@ -6,7 +6,7 @@ export const usePortfolioData = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080';
+        const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://mine-portfolio-backend.onrender.com';
         fetch(`${API_BASE_URL}/api/public/data`)
             .then(res => {
                 if (!res.ok) throw new Error('Network response was not ok');

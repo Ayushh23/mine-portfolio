@@ -19,7 +19,7 @@ const AdminDashboard = () => {
 
     const fetchData = async () => {
         try {
-            const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080';
+            const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://mine-portfolio-backend.onrender.com';
             const res = await fetch(`${API_BASE_URL}/api/public/data`);
             if (res.ok) {
                 const json = await res.json();
@@ -41,7 +41,7 @@ const AdminDashboard = () => {
     const handleDelete = async (type, id) => {
         if (!window.confirm("Are you sure?")) return;
         try {
-            const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080';
+            const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://mine-portfolio-backend.onrender.com';
             const res = await fetch(`${API_BASE_URL}/api/admin/${type}/${id}`, {
                 method: 'DELETE',
                 headers: { 'Authorization': `Bearer ${token}` }
@@ -125,7 +125,7 @@ const AdminDashboard = () => {
             payload.description = payload.description.split('\n').map(s => s.trim()).filter(s => s);
         }
 
-        const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080';
+        const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://mine-portfolio-backend.onrender.com';
         const url = editingId 
             ? `${API_BASE_URL}/api/admin/${activeTab}/${editingId}`
             : `${API_BASE_URL}/api/admin/${activeTab}`;
@@ -155,7 +155,7 @@ const AdminDashboard = () => {
 
     const handleUpdateSetting = async (key, value) => {
         try {
-            const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080';
+            const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://mine-portfolio-backend.onrender.com';
             const res = await fetch(`${API_BASE_URL}/api/admin/settings`, {
                 method: 'PUT',
                 headers: { 
