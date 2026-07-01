@@ -15,7 +15,7 @@ const RotatingText = ({ items }) => {
     }, [items]);
 
     return (
-        <span className="relative inline-flex overflow-hidden h-[1.2em] w-[10em] align-bottom">
+        <span className="relative inline-flex overflow-hidden h-[1.2em] w-[7em] sm:w-[10em] align-bottom">
             <AnimatePresence mode="popLayout">
                 <motion.span
                     key={index}
@@ -35,7 +35,7 @@ const RotatingText = ({ items }) => {
 const Hero = () => {
     const { content } = usePortfolioData();
     return (
-        <div name='hero' className='w-full min-h-screen bg-primary flex items-center justify-center relative overflow-hidden pt-20 md:pt-0'>
+        <div name='hero' className='w-full min-h-screen bg-primary flex items-center justify-center relative overflow-hidden pt-20 sm:pt-24 md:pt-32 pb-16 md:pb-24'>
 
             {/* Premium Animated Background Layer */}
             <div className="absolute inset-0 z-0 pointer-events-none">
@@ -48,7 +48,7 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,#000_70%,transparent_100%)]"></div>
             </div>
 
-            <div className='max-w-[1200px] w-full px-8 flex flex-col justify-center h-full z-10'>
+            <div className='max-w-[1200px] w-full px-5 sm:px-8 flex flex-col justify-center z-10'>
 
                 {/* Available for work badge */}
                 <motion.div
