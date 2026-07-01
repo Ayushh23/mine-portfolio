@@ -5,7 +5,7 @@ import {
     SiTailwindcss, SiMongodb, SiFirebase,
     SiMysql, SiPython, SiSpringboot,
     SiAndroid, SiGoogle, SiRedis, SiFastapi, SiKotlin, SiNginx,
-    SiOpenai, SiDocker, SiPostman
+    SiOpenai, SiDocker, SiPostman, SiApachekafka
 } from 'react-icons/si';
 import { DiMysql } from 'react-icons/di';
 import { usePortfolioData } from '../hooks/usePortfolioData';
