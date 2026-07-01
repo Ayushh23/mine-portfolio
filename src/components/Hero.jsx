@@ -37,15 +37,15 @@ const Hero = () => {
     return (
         <div name='hero' className='w-full min-h-screen bg-primary flex items-center justify-center relative overflow-hidden pt-20 sm:pt-24 md:pt-32 pb-16 md:pb-24'>
 
-            {/* Premium Animated Background Layer */}
+            {/* Premium Animated Background Layer (Optimized for Mobile Scroll) */}
             <div className="absolute inset-0 z-0 pointer-events-none">
-                <div className="absolute top-1/4 left-1/4 w-[30rem] h-[30rem] bg-accent-purple/20 rounded-full mix-blend-screen filter blur-[100px] animate-blob" />
-                <div className="absolute top-1/3 right-1/4 w-[30rem] h-[30rem] bg-accent-cyan/20 rounded-full mix-blend-screen filter blur-[100px] animate-blob" style={{ animationDelay: '2s' }} />
-                <div className="absolute -bottom-32 left-1/3 w-[30rem] h-[30rem] bg-accent-blue/20 rounded-full mix-blend-screen filter blur-[100px] animate-blob" style={{ animationDelay: '4s' }} />
+                <div className="absolute top-1/4 left-1/4 w-48 h-48 md:w-[30rem] md:h-[30rem] bg-accent-purple/15 rounded-full mix-blend-screen filter blur-[60px] md:blur-[100px] md:animate-blob transform-gpu" />
+                <div className="absolute top-1/3 right-1/4 w-48 h-48 md:w-[30rem] md:h-[30rem] bg-accent-cyan/15 rounded-full mix-blend-screen filter blur-[60px] md:blur-[100px] md:animate-blob transform-gpu" style={{ animationDelay: '2s' }} />
+                <div className="absolute -bottom-32 left-1/3 w-48 h-48 md:w-[30rem] md:h-[30rem] bg-accent-blue/15 rounded-full mix-blend-screen filter blur-[60px] md:blur-[100px] md:animate-blob transform-gpu" style={{ animationDelay: '4s' }} />
 
-                {/* Subtle Grid and Noise Overlay */}
-                <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10 mix-blend-soft-light"></div>
-                <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,#000_70%,transparent_100%)]"></div>
+                {/* Subtle Grid and Noise Overlay - Desktop Only for performance */}
+                <div className="hidden md:block absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10 mix-blend-soft-light"></div>
+                <div className="hidden md:block absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,#000_70%,transparent_100%)]"></div>
             </div>
 
             <div className='max-w-[1200px] w-full px-5 sm:px-8 flex flex-col justify-center z-10'>
