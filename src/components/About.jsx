@@ -28,8 +28,8 @@ const About = () => {
                     className='glass-card p-8 md:p-12 relative overflow-hidden'
                 >
                     {/* Decorative glow inside card */}
-                    <div className="absolute top-0 right-0 w-64 h-64 bg-accent-cyan/10 rounded-full mix-blend-screen filter blur-[80px] -z-10"></div>
-                    <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent-purple/10 rounded-full mix-blend-screen filter blur-[80px] -z-10"></div>
+                    <div className="absolute top-0 right-0 w-32 h-32 md:w-64 md:h-64 bg-accent-cyan/10 rounded-full mix-blend-screen filter blur-[50px] md:blur-[80px] -z-10 transform-gpu"></div>
+                    <div className="absolute bottom-0 left-0 w-32 h-32 md:w-64 md:h-64 bg-accent-purple/10 rounded-full mix-blend-screen filter blur-[50px] md:blur-[80px] -z-10 transform-gpu"></div>
 
                     <div className='grid md:grid-cols-2 gap-10 md:gap-16 items-center'>
                         <div className='text-3xl md:text-4xl font-bold text-white leading-tight'>
