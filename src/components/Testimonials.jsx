@@ -30,7 +30,7 @@ const Testimonials = () => {
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             viewport={{ once: true }}
                             whileHover={{ scale: 1.02 }}
-                            className='bg-secondary/20 backdrop-blur-md p-8 rounded-2xl border border-white/5 shadow-xl flex flex-col relative group hover:border-accent-purple/30 transition-all duration-300'
+                            className='bg-secondary/80 p-8 rounded-2xl border border-white/5 shadow-xl flex flex-col relative group hover:border-accent-purple/30 transition-all duration-300 md:bg-secondary/20 md:backdrop-blur-md'
                         >
                             <FaQuoteLeft className='text-4xl text-accent-purple/20 mb-4 group-hover:text-accent-purple/50 transition-colors' />
 
