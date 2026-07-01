@@ -46,7 +46,7 @@ const Contact = () => {
         <div name='contact' className='w-full py-32 bg-primary flex justify-center items-center px-4 relative overflow-hidden'>
 
             {/* Background Orbs */}
-            <div className="absolute top-1/2 left-0 w-[40rem] h-[40rem] bg-accent-blue/10 rounded-full mix-blend-screen filter blur-[120px] -translate-y-1/2 -z-10 pointer-events-none"></div>
+            <div className="absolute top-1/2 left-0 w-[20rem] h-[20rem] md:w-[40rem] md:h-[40rem] bg-accent-blue/10 rounded-full mix-blend-screen filter blur-[70px] md:blur-[120px] -translate-y-1/2 -z-10 pointer-events-none transform-gpu"></div>
 
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
@@ -83,7 +83,7 @@ const Contact = () => {
                 {/* Form Side */}
                 <div className="relative">
                     {/* Decorative blurred backdrop specifically for form */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-accent-cyan/20 to-accent-purple/20 blur-3xl -z-10 rounded-[3rem]"></div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-accent-cyan/20 to-accent-purple/20 blur-3xl -z-10 rounded-[3rem] transform-gpu"></div>
 
                     <form
                         onSubmit={handleSubmit}
